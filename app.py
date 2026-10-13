@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"mensagem": "Bem-vindo à API FastOrder!"})
+    return jsonify({"mensagem": "Bem-vindo a API FastOrder!"})
 
 @app.route('/api/status')
 def status():

@@ -14,7 +14,7 @@ def test_home_status_code(client):
 def test_home_mensagem(client):
     resposta = client.get('/')
     dados = resposta.get_json()
-    assert dados['mensagem'] == "Bem-vindo à API FastOrder!"
+    assert dados['mensagem'] == "Bem-vindo a API FastOrder!"
 
 # =====================================================
 # MISSÃO 6.1
