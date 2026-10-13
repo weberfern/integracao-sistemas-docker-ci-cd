@@ -1,6 +1,24 @@
-﻿# [ADS0024] Integração de Sistemas
+# 🎓 [ADS0024] Integração de Sistemas
 
 ## Estudo Guiado 01 - Pipeline CI: Integração Contínua, Testes e Deploy com Docker
+
+- **Universidade:** Universidade Federal do Cariri (UFCA)
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+- **Disciplina:** Integração de Sistemas [ADS0024]
+- **Professor:** Prof. Francisco Ferreira de Mendonça Júnior
+
+## 👥 Equipe
+
+| Nome | Matrícula |
+| --- | --- |
+| Iago Ronan Almino Oliveira | 2025012453 |
+| Jefferson Rodrigues de Oliveira | 2025013432 |
+| Lucas Gabriel Correia Gonçalves | 2025013479 |
+| Luiz Filipy Soares da Silva | 2025013503 |
+| Marcelo dos Santos Alves | 2023010825 |
+| Weber Fernandes da Silva | 2025019356 |
+
+## Descrição
 
 Este projeto foi desenvolvido para a disciplina **[ADS0024] Integração de Sistemas** e apresenta uma API web em Flask preparada para um fluxo básico de Integração Contínua (CI), execução de testes automatizados e empacotamento com Docker.
 
@@ -19,7 +37,7 @@ A aplicação representa a API do serviço **FastOrder** e disponibiliza endpoin
 | Método | Rota | Descrição |
 | --- | --- | --- |
 | `GET` | `/` | Retorna uma mensagem de boas-vindas. |
-| `GET` | `/api/status` | Informa o status e o nome do servico. |
+| `GET` | `/api/status` | Informa o status e o nome do serviço. |
 | `GET` | `/api/soma?a=10&b=5` | Soma os valores `a` e `b` recebidos como parâmetros. |
 
 Exemplo de resposta de `/api/soma?a=10&b=5`:
@@ -118,10 +136,10 @@ docker rm fastorder-api
 
 O fluxo proposto para o projeto é:
 
-1. Receber uma alteracao no repositório.
+1. Receber uma alteração no repositório.
 2. Instalar as dependências do projeto.
 3. Executar os testes automatizados com `pytest`.
-4. Verificar o padrão do codigo com `flake8`.
+4. Verificar o padrão do código com `flake8`.
 5. Construir a imagem Docker com `docker build`.
 6. Disponibilizar a imagem ou a aplicação para a etapa de deploy.
 
