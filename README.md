@@ -1,10 +1,10 @@
-﻿# [ADS0024] Integracao de Sistemas
+﻿# [ADS0024] Integração de Sistemas
 
-## Estudo Guiado 01 - Pipeline CI: Integracao Continua, Testes e Deploy com Docker
+## Estudo Guiado 01 - Pipeline CI: Integração Contínua, Testes e Deploy com Docker
 
-Este projeto foi desenvolvido para a disciplina **[ADS0024] Integracao de Sistemas** e apresenta uma API web em Flask preparada para um fluxo basico de Integracao Continua (CI), execucao de testes automatizados e empacotamento com Docker.
+Este projeto foi desenvolvido para a disciplina **[ADS0024] Integração de Sistemas** e apresenta uma API web em Flask preparada para um fluxo básico de Integração Contínua (CI), execução de testes automatizados e empacotamento com Docker.
 
-A aplicacao representa a API do servico **FastOrder** e disponibiliza endpoints para validar o funcionamento do servico e realizar uma operacao simples de soma.
+A aplicação representa a API do serviço **FastOrder** e disponibiliza endpoints para validar o funcionamento do serviço e realizar uma operação simples de soma.
 
 ## Tecnologias
 
@@ -16,11 +16,11 @@ A aplicacao representa a API do servico **FastOrder** e disponibiliza endpoints 
 
 ## Funcionalidades
 
-| Metodo | Rota | Descricao |
+| Método | Rota | Descrição |
 | --- | --- | --- |
 | `GET` | `/` | Retorna uma mensagem de boas-vindas. |
 | `GET` | `/api/status` | Informa o status e o nome do servico. |
-| `GET` | `/api/soma?a=10&b=5` | Soma os valores `a` e `b` recebidos como parametros. |
+| `GET` | `/api/soma?a=10&b=5` | Soma os valores `a` e `b` recebidos como parâmetros. |
 
 Exemplo de resposta de `/api/soma?a=10&b=5`:
 
@@ -34,14 +34,14 @@ Exemplo de resposta de `/api/soma?a=10&b=5`:
 
 ```text
 .
-├── app.py             # Codigo da API Flask
+├── app.py             # Código da API Flask
 ├── test_app.py        # Testes automatizados
-├── requirements.txt   # Dependencias Python
-├── Dockerfile         # Configuracao da imagem Docker
-└── README.md          # Documentacao do projeto
+├── requirements.txt   # Dependências Python
+├── Dockerfile         # Configuração da imagem Docker
+└── README.md          # Documentação do projeto
 ```
 
-## Execucao local
+## Execução local
 
 1. Crie e ative um ambiente virtual:
 
@@ -55,7 +55,7 @@ Exemplo de resposta de `/api/soma?a=10&b=5`:
 	.\venv\Scripts\Activate.ps1
 	```
 
-2. Instale as dependencias:
+2. Instale as dependências:
 
 	```bash
 	pip install -r requirements.txt
@@ -67,9 +67,9 @@ Exemplo de resposta de `/api/soma?a=10&b=5`:
 	python app.py
 	```
 
-A aplicacao ficara disponivel em `http://localhost:5000`.
+A aplicação ficará disponível em `http://localhost:5000`.
 
-## Testes e verificacao de qualidade
+## Testes e verificação de qualidade
 
 Execute os testes automatizados com:
 
@@ -77,15 +77,15 @@ Execute os testes automatizados com:
 pytest
 ```
 
-Para executar a verificacao de estilo:
+Para executar a verificação de estilo:
 
 ```bash
 flake8 app.py test_app.py
 ```
 
-O pipeline de CI deve instalar as dependencias e executar essas verificacoes antes de considerar a alteracao apta para empacotamento.
+O pipeline de CI deve instalar as dependências e executar essas verificações antes de considerar a alteração apta para empacotamento.
 
-## Execucao com Docker
+## Execução com Docker
 
 1. Construa a imagem:
 
@@ -114,19 +114,19 @@ docker stop fastorder-api
 docker rm fastorder-api
 ```
 
-## Fluxo de Integracao Continua
+## Fluxo de Integração Contínua
 
-O fluxo proposto para o projeto e:
+O fluxo proposto para o projeto é:
 
-1. Receber uma alteracao no repositorio.
-2. Instalar as dependencias do projeto.
+1. Receber uma alteracao no repositório.
+2. Instalar as dependências do projeto.
 3. Executar os testes automatizados com `pytest`.
-4. Verificar o padrao do codigo com `flake8`.
+4. Verificar o padrão do codigo com `flake8`.
 5. Construir a imagem Docker com `docker build`.
-6. Disponibilizar a imagem ou a aplicacao para a etapa de deploy.
+6. Disponibilizar a imagem ou a aplicação para a etapa de deploy.
 
-Esse processo ajuda a identificar erros rapidamente e garante que somente alteracoes verificadas avancem para a entrega.
+Esse processo ajuda a identificar erros rapidamente e garante que somente alterações verificadas avancem para a entrega.
 
-## Objetivo academico
+## Objetivo acadêmico
 
-O Estudo Guiado 01 tem como objetivo praticar conceitos de Integracao Continua, testes automatizados, conteinerizacao e preparacao de uma aplicacao para um processo de deploy repetivel.
+O Estudo Guiado 01 tem como objetivo praticar conceitos de Integração Contínua, testes automatizados, conteinerização e preparação de uma aplicação para um processo de deploy repetível.
