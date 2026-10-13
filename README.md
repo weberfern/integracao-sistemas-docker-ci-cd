@@ -1,6 +1,4 @@
-# 🎓 [ADS0024] Integração de Sistemas
-
-## Estudo Guiado 01 - Pipeline CI: Integração Contínua, Testes e Deploy com Docker
+# 📄 Estudo Guiado 01 - Pipeline CI: Integração Contínua, Testes e Deploy com Docker
 
 - **Universidade:** Universidade Federal do Cariri (UFCA)
 - **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
