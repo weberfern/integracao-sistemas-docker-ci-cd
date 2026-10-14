@@ -19,7 +19,7 @@ def test_home_mensagem(client):
 # =====================================================
 # MISSÃO 6.1
 def test_soma(client):
-    resposta = client.get('/api/resultado?a=10&b=5')
+    resposta = client.get('/api/soma?a=10&b=5')
     dados = resposta.get_json()
 
     assert resposta.status_code == 200
